@@ -123,6 +123,7 @@ p { margin: 0; }
 
 /* ---------- Voices ---------- */
 .voices { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.voices--single { grid-template-columns: minmax(0, 640px); justify-content: center; }
 .voice { margin: 0; padding: 28px 28px 24px; background: var(--white); border: 1px solid var(--line); display: flex; flex-direction: column; gap: 10px; }
 .voice__stars { color: var(--gold-500); letter-spacing: 0.1em; font-size: 15px; }
 .voice h3 { font-family: var(--font-serif); font-size: 18px; color: var(--navy-800); }
