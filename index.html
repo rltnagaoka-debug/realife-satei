@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>福岡の不動産売却査定｜無料・LINEで完結｜株式会社リアライフ</title>
+  <meta name="description" content="福岡の一棟アパート・マンション、区分マンション、戸建て、土地の売却査定を無料で承ります。入力1分、査定結果はLINEでお届け。株式会社リアライフ（福岡県知事(2)第18820号）。" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="header__logo"><img src="assets/logo.png" alt="株式会社リアライフ" /></a>
+      <a href="tel:0927105982" class="header__tel">
+        <span class="header__tel-label">お電話でのご相談</span>
+        <span class="header__tel-num">092-710-5982</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <p class="hero__eyebrow">福岡の不動産売却査定</p>
+        <h1 class="hero__title">あなたの不動産、<br />いくらで売れるか<br class="sp" />ご存じですか？</h1>
+        <p class="hero__lead">入力は約1分。査定結果は<strong>LINE</strong>でお届けします。</p>
+        <ul class="hero__badges">
+          <li><span>査定</span>完全無料</li>
+          <li><span>入力</span>約1分</li>
+          <li><span>結果は</span>LINEで</li>
+        </ul>
+        <a href="#satei" class="btn btn--gold btn--lg">無料で査定を依頼する</a>
+      </div>
+    </section>
+
+    <!-- Form -->
+    <section class="section section--paper" id="satei">
+      <div class="container container--narrow">
+        <h2 class="section__title"><span>FREE ASSESSMENT</span>無料査定フォーム</h2>
+
+        <ol class="progress" aria-label="入力ステップ">
+          <li class="is-active">物件種別</li>
+          <li>所在地</li>
+          <li>物件情報</li>
+          <li>お客様情報</li>
+          <li>送信</li>
+        </ol>
+
+        <form id="sateiForm" class="card form" novalidate>
+          <!-- Step 1 -->
+          <fieldset class="step is-active" data-step="1">
+            <legend>査定する物件の種別を選択してください</legend>
+            <div class="type-grid">
+              <label class="type-card">
+                <input type="radio" name="type" value="一棟アパート・マンション" required />
+                <span class="type-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48"><path d="M10 42V12l14-6 14 6v30M10 42h28M17 17h4M27 17h4M17 25h4M27 25h4M17 33h4M27 33h4"/></svg>
+                </span>
+                <span class="type-card__label">一棟アパート<br />・マンション</span>
+              </label>
+              <label class="type-card">
+                <input type="radio" name="type" value="区分マンション" />
+                <span class="type-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48"><path d="M12 42V6h24v36M12 42h24M18 12h4M26 12h4M18 20h4M26 20h4M18 28h12v14H18z"/></svg>
+                </span>
+                <span class="type-card__label">区分<br />マンション</span>
+              </label>
+              <label class="type-card">
+                <input type="radio" name="type" value="戸建て" />
+                <span class="type-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48"><path d="M6 22L24 8l18 14M11 18v24h26V18M20 42V30h8v12"/></svg>
+                </span>
+                <span class="type-card__label">戸建て</span>
+              </label>
+              <label class="type-card">
+                <input type="radio" name="type" value="土地" />
+                <span class="type-card__icon" aria-hidden="true">
+                  <svg viewBox="0 0 48 48"><path d="M4 36l10-8 10 6 10-10 10 8M4 42h40M8 36v6M40 32v10"/></svg>
+                </span>
+                <span class="type-card__label">土地</span>
+              </label>
+            </div>
+            <p class="error" data-error="type"></p>
+          </fieldset>
+
+          <!-- Step 2 -->
+          <fieldset class="step" data-step="2">
+            <legend>物件の所在地を入力してください</legend>
+            <div class="field">
+              <label for="pref">都道府県 <em>必須</em></label>
+              <select id="pref" name="pref" required>
+                <option value="福岡県" selected>福岡県</option>
+                <option>佐賀県</option><option>長崎県</option><option>熊本県</option>
+                <option>大分県</option><option>宮崎県</option><option>鹿児島県</option>
+                <option>山口県</option><option>大阪府</option><option>北海道</option>
+                <option value="その他">その他</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="city">市区町村 <em>必須</em></label>
+              <input id="city" name="city" type="text" placeholder="例）福岡市東区" required autocomplete="address-level2" />
+              <p class="error" data-error="city"></p>
+            </div>
+            <div class="field">
+              <label for="town">町名・番地 <small>任意</small></label>
+              <input id="town" name="town" type="text" placeholder="例）原田2-14-7" autocomplete="address-line1" />
+              <p class="hint">番地までご入力いただくと、より精度の高い査定が可能です。</p>
+            </div>
+            <div class="field">
+              <label for="bname">物件名 <small>任意</small></label>
+              <input id="bname" name="bname" type="text" placeholder="例）〇〇マンション 301号室" />
+            </div>
+          </fieldset>
+
+          <!-- Step 3 -->
+          <fieldset class="step" data-step="3">
+            <legend>物件の情報を入力してください<small>わかる範囲で構いません</small></legend>
+
+            <div class="grid-2">
+              <div class="field" data-show="一棟アパート・マンション 戸建て 土地">
+                <label for="land">土地面積</label>
+                <div class="unit"><input id="land" name="land" type="number" inputmode="decimal" min="0" step="0.01" /><span>㎡</span></div>
+              </div>
+              <div class="field" data-show="一棟アパート・マンション 戸建て">
+                <label for="floor">建物延床面積</label>
+                <div class="unit"><input id="floor" name="floor" type="number" inputmode="decimal" min="0" step="0.01" /><span>㎡</span></div>
+              </div>
+              <div class="field" data-show="区分マンション">
+                <label for="area">専有面積</label>
+                <div class="unit"><input id="area" name="area" type="number" inputmode="decimal" min="0" step="0.01" /><span>㎡</span></div>
+              </div>
+              <div class="field" data-show="区分マンション 戸建て">
+                <label for="madori">間取り</label>
+                <select id="madori" name="madori">
+                  <option value="">選択してください</option>
+                  <option>1R・1K</option><option>1DK・1LDK</option><option>2DK・2LDK</option>
+                  <option>3DK・3LDK</option><option>4LDK以上</option>
+                </select>
+              </div>
+              <div class="field" data-show="一棟アパート・マンション">
+                <label for="units">総戸数</label>
+                <div class="unit"><input id="units" name="units" type="number" inputmode="numeric" min="0" /><span>戸</span></div>
+              </div>
+              <div class="field" data-show="一棟アパート・マンション 区分マンション 戸建て">
+                <label for="structure">構造</label>
+                <select id="structure" name="structure">
+                  <option value="">選択してください</option>
+                  <option>木造</option><option>軽量鉄骨造</option><option>重量鉄骨造</option>
+                  <option>RC造</option><option>SRC造</option><option>不明</option>
+                </select>
+              </div>
+              <div class="field" data-show="一棟アパート・マンション 区分マンション 戸建て">
+                <label for="built">築年（西暦）</label>
+                <div class="unit"><input id="built" name="built" type="number" inputmode="numeric" min="1900" max="2100" placeholder="例）2005" /><span>年</span></div>
+              </div>
+              <div class="field" data-show="一棟アパート・マンション 区分マンション">
+                <label for="rent">現在の家賃収入</label>
+                <div class="unit"><input id="rent" name="rent" type="number" inputmode="numeric" min="0" placeholder="例）80" /><span>万円/月</span></div>
+              </div>
+            </div>
+
+            <div class="field">
+              <label>現在の状況</label>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="status" value="居住中" /><span>居住中</span></label>
+                <label class="chip"><input type="radio" name="status" value="空室・空き家" /><span>空室・空き家</span></label>
+                <label class="chip" data-show="一棟アパート・マンション 区分マンション 戸建て"><input type="radio" name="status" value="賃貸中" /><span>賃貸中</span></label>
+                <label class="chip"><input type="radio" name="status" value="その他" /><span>その他</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <label>売却希望時期</label>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="timing" value="すぐにでも" /><span>すぐにでも</span></label>
+                <label class="chip"><input type="radio" name="timing" value="3ヶ月以内" /><span>3ヶ月以内</span></label>
+                <label class="chip"><input type="radio" name="timing" value="1年以内" /><span>1年以内</span></label>
+                <label class="chip"><input type="radio" name="timing" value="相場を知りたいだけ" /><span>相場を知りたいだけ</span></label>
+              </div>
+            </div>
+          </fieldset>
+
+          <!-- Step 4 -->
+          <fieldset class="step" data-step="4">
+            <legend>お客様の情報を入力してください</legend>
+            <div class="field">
+              <label for="name">お名前 <em>必須</em></label>
+              <input id="name" name="name" type="text" placeholder="例）福岡 太郎" required autocomplete="name" />
+              <p class="error" data-error="name"></p>
+            </div>
+            <div class="field">
+              <label for="tel">電話番号 <em>必須</em></label>
+              <input id="tel" name="tel" type="tel" placeholder="例）090-1234-5678" required autocomplete="tel" />
+              <p class="error" data-error="tel"></p>
+            </div>
+            <div class="field">
+              <label>物件との関係</label>
+              <div class="chips">
+                <label class="chip"><input type="radio" name="relation" value="所有者本人" /><span>所有者本人</span></label>
+                <label class="chip"><input type="radio" name="relation" value="共有者・家族" /><span>共有者・家族</span></label>
+                <label class="chip"><input type="radio" name="relation" value="相続予定" /><span>相続予定</span></label>
+                <label class="chip"><input type="radio" name="relation" value="その他" /><span>その他</span></label>
+              </div>
+            </div>
+            <div class="field">
+              <label for="note">ご要望・ご質問 <small>任意</small></label>
+              <textarea id="note" name="note" rows="4" placeholder="例）住み替えを検討中です。ローン残債があります。"></textarea>
+            </div>
+            <label class="agree">
+              <input type="checkbox" name="agree" required />
+              <span><a href="#privacy">個人情報の取り扱い</a>に同意する</span>
+            </label>
+            <p class="error" data-error="agree"></p>
+          </fieldset>
+
+          <!-- Step 5 -->
+          <fieldset class="step" data-step="5">
+            <legend>入力内容をご確認のうえ、LINEで送信してください</legend>
+            <pre class="summary" id="summary"></pre>
+            <div class="send">
+              <a id="lineSend" class="btn btn--line btn--lg" href="#" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C6.5 3 2 6.6 2 11c0 3.9 3.5 7.2 8.3 7.9.3.1.8.2.9.5.1.3.1.7 0 1l-.1.9c0 .3-.2 1 .9.5s5.9-3.5 8.1-6C21.6 14.3 22 12.7 22 11c0-4.4-4.5-8-10-8z"/></svg>
+                LINEで査定を依頼する
+              </a>
+              <p class="hint center">LINEが開き、入力内容が自動で入ります。<br />そのまま<strong>送信ボタン</strong>を押すと依頼が完了します。</p>
+              <div class="send__alt">
+                <p>LINEが開かない場合は</p>
+                <button type="button" id="copyBtn" class="btn btn--ghost">① 内容をコピー</button>
+                <a href="https://lin.ee/W5oG8Or" target="_blank" rel="noopener" class="btn btn--ghost">② 友だち追加して貼り付け</a>
+                <p class="copied" id="copied" hidden>コピーしました</p>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="form__nav">
+            <button type="button" class="btn btn--ghost" id="prevBtn" hidden>戻る</button>
+            <button type="button" class="btn btn--navy" id="nextBtn">次へ進む</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- Reasons -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section__title"><span>REASON</span>リアライフが選ばれる理由</h2>
+        <div class="reasons">
+          <article class="reason">
+            <p class="reason__num">01</p>
+            <h3>収益不動産に強い</h3>
+            <p>一棟アパート・マンションの売買実績が豊富です。利回りと融資の両面から、投資家目線の適正価格をご提示します。</p>
+          </article>
+          <article class="reason">
+            <p class="reason__num">02</p>
+            <h3>豊富な買主ネットワーク</h3>
+            <p>個人投資家・法人・金融機関とのつながりを活かし、相場に沿った価格で早期の売却を目指します。</p>
+          </article>
+          <article class="reason">
+            <p class="reason__num">03</p>
+            <h3>LINEで気軽に相談</h3>
+            <p>査定結果のお届けからご相談まで、LINEで完結します。しつこい営業電話はいたしません。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Flow -->
+    <section class="section section--navy">
+      <div class="container">
+        <h2 class="section__title section__title--light"><span>FLOW</span>査定の流れ</h2>
+        <ol class="flow">
+          <li><span>STEP 1</span><h3>フォームに入力</h3><p>物件の種別・所在地・概要を入力します（約1分）。</p></li>
+          <li><span>STEP 2</span><h3>LINEで送信</h3><p>入力内容が自動でLINEに入るので、送信するだけです。</p></li>
+          <li><span>STEP 3</span><h3>簡易査定のお届け</h3><p>担当者が査定を行い、LINEで結果をお送りします。</p></li>
+          <li><span>STEP 4</span><h3>訪問査定（ご希望の方）</h3><p>現地を確認し、より正確な査定額と売却プランをご提案します。</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section">
+      <div class="container container--narrow">
+        <h2 class="section__title"><span>FAQ</span>よくあるご質問</h2>
+        <div class="faq">
+          <details><summary>査定に費用はかかりますか？</summary><p>査定は無料です。査定後に売却しなくても費用はかかりません。</p></details>
+          <details><summary>査定結果はどのくらいで届きますか？</summary><p>通常は1〜3営業日以内にLINEでお送りします。物件や内容によっては、追加で資料を確認させていただく場合があります。</p></details>
+          <details><summary>入居者がいる状態でも売却できますか？</summary><p>可能です。賃貸中の物件は「オーナーチェンジ物件」として、収益物件を探している投資家に向けてご紹介します。</p></details>
+          <details><summary>相続した物件やローンが残っている物件でも大丈夫ですか？</summary><p>ご相談いただけます。相続登記やローン残債の整理も含めて、売却までの流れをご案内します。</p></details>
+          <details><summary>福岡県外の物件も査定できますか？</summary><p>九州エリアのほか、大阪・北海道などの物件も取り扱った実績があります。まずはお気軽にご相談ください。</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+        <p class="cta__lead">まずは相場を知ることから。</p>
+        <a href="#satei" class="btn btn--gold btn--lg">無料で査定を依頼する</a>
+      </div>
+    </section>
+
+    <!-- Privacy -->
+    <section class="section section--paper" id="privacy">
+      <div class="container container--narrow">
+        <h2 class="section__title section__title--sm">個人情報の取り扱いについて</h2>
+        <div class="privacy">
+          <p>株式会社リアライフ（以下「当社」）は、本フォームおよびLINEを通じて取得したお客様の個人情報を、以下の目的の範囲内で利用します。</p>
+          <ul>
+            <li>不動産の査定およびその結果のご連絡</li>
+            <li>不動産の売却・購入・管理に関するご提案とご連絡</li>
+            <li>お問い合わせへの対応</li>
+          </ul>
+          <p>法令に基づく場合を除き、ご本人の同意なく第三者に提供することはありません。個人情報の開示・訂正・削除のご依頼は、下記の連絡先までご連絡ください。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <img src="assets/logo.png" alt="株式会社リアライフ" class="footer__logo" />
+      <dl class="footer__info">
+        <dt>会社名</dt><dd>株式会社リアライフ</dd>
+        <dt>所在地</dt><dd>〒812-0063 福岡県福岡市東区原田2-14-7-406</dd>
+        <dt>電話番号</dt><dd><a href="tel:0927105982">092-710-5982</a></dd>
+        <dt>免許番号</dt><dd>宅地建物取引業 福岡県知事(2)第18820号</dd>
+        <dt>所属団体</dt><dd>公益社団法人 福岡県宅地建物取引業協会／公益社団法人 全国宅地建物取引業保証協会</dd>
+      </dl>
+      <p class="footer__copy">&copy; ReaLife Co., Ltd.</p>
+    </div>
+  </footer>
+
+  <a href="#satei" class="float-cta">無料査定はこちら</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
