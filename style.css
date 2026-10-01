@@ -113,7 +113,7 @@ p { margin: 0; }
 
 /* ---------- Numbers ---------- */
 .numbers { background: var(--white); border-bottom: 1px solid var(--line); }
-.numbers__inner { display: grid; grid-template-columns: repeat(3, 1fr); }
+.numbers__inner { display: grid; grid-template-columns: repeat(2, 1fr); }
 .number { text-align: center; padding: 32px 12px; }
 .number + .number { border-left: 1px solid var(--line); }
 .number__label { font-size: 13px; font-weight: 700; color: var(--ink-700); letter-spacing: 0.08em; }
